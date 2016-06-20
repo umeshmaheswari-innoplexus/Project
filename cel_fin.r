@@ -52,6 +52,8 @@ dim(all.data)
 filtered_genes = all.data[DE.probesets,]
 dim(filtered_genes)
 
+write.table(filtered_genes, "filtered_genes_t_test.txt", sep="\t", quote=F)
+
 
 
 
